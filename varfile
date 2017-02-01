@@ -1,0 +1,6 @@
+MSERVICE="rainloop"
+REGISTRY="docker.io/eswees"
+
+set -e
+set -u
+set -x
