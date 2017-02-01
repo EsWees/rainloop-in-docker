@@ -6,6 +6,4 @@ if [ ! -f /var/www/html/data ]; then
 		chown -R apache:apache /var/www/html/
 fi
 
-rm -rf /var/run/httpd.pid
-
 $@
