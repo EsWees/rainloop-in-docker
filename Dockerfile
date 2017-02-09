@@ -33,6 +33,6 @@ ADD entry.sh /entry.sh
 RUN chmod +x /entry.sh
 ENTRYPOINT [ "/entry.sh" ]
 
-CMD /usr/sbin/apachectl -DFOREGROUND
+#CMD /usr/sbin/apachectl -DFOREGROUND
 
 VOLUME [ "/var/www/html" ]

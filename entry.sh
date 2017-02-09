@@ -5,5 +5,6 @@ if [ ! -d /var/www/html/data ]; then
 		curl -s http://repository.rainloop.net/installer.php | php
 		chown -R apache:apache /var/www/html/
 fi
-rm -rf /run/httpd/*.pid || true
-$@
+rm -rf /run/httpd/*.pid
+
+/usr/sbin/apachectl -DFOREGROUND
